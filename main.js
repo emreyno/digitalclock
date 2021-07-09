@@ -80,7 +80,7 @@ function oras() {
 
  }
 
-
+ setInterval(oras, 250);
 
 
 
