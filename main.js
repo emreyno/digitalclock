@@ -16,7 +16,6 @@ function twentyFour_hour() {
 
 function oras() {
     let date = new Date();
-    
     let hrs = date.getHours();
     let mins = date.getMinutes();
     let secs = date.getSeconds();
@@ -24,8 +23,7 @@ function oras() {
     let zone = date.getTimezoneOffset()/-60;
 
     
-    // console.log(type);
-    // console.log(date.getUTCDate());
+
 
     if(type==1){
         if(hrs==0){
@@ -84,20 +82,7 @@ function oras() {
 
 
 
-setInterval(oras, 250);
 
-function getTimezoneOffset(timeZone) {
-    const now = new Date();
-    const tzString = now.toLocaleString('en-US', { timeZone });
-    const localString = now.toLocaleString('en-US');
-    const diff = (Date.parse(localString) - Date.parse(tzString)) / 3600000;
-    const offset = diff + now.getTimezoneOffset() / 60;
-    
-    return -offset;
-  }
-  const offset = getTimezoneOffset('Asia/Dubai');
-
-console.log(offset); // output: -10
 
 
 
